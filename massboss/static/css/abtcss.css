@@ -1,0 +1,22 @@
+:root{
+    --gold : rgb(255, 194, 26);
+}
+.abth1{
+color:var(--gold);
+font-weight: 900;
+font-size: 7rem;
+font-family: 'Kufam', sans-serif;
+}
+.heroTxtContainer{
+height:30vh;
+background-image:url(/assets/img/about.jpg);
+background-size: cover;
+background-position: center;
+text-align: center;
+}
+.profile{
+    background: rgb(235, 233, 233);
+}
+.services{
+    background:rgb(228, 227, 227) ;
+}

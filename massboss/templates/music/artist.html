@@ -1,0 +1,176 @@
+{% extends "partials/base.html" %}
+{% block title %}Massboss Entertainment- Home{% endblock title %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block content %}
+<head>
+  <!-- Main CSS File -->
+  <link href=" {% static '/css/tracks.css' %}" rel="stylesheet">
+</head>
+
+  <main>
+    <div class="overdown container">
+      <div class="lil-description container" style="border:1px solid transparent" >
+          <h1 class="heading m-5 p-0 fw-light display-5">Get To Know More About <br> Our Artistes Here</h1>
+      </div>
+      <div class="grids container-fluid row m-0 p-0" data-aos="fade-up">
+        <div class="col-12 col-sm-6" style="border:1px solid transparent">
+          <div class="row">
+            <div class="mains col-lg-12">
+              <div class="artist-1 first-set m-1" data-aos="zoom-in" data-aos-delay="200">
+                  <img class="img-fluid" src="{% static '/news/1.jpg' %}" alt=""> 
+              </div>
+              <div class="hovering-effect p-0 m-0">
+                <p class="mx-1 p-1"><span class="fs-4 text-yello">SNARES</span><br> ipsum dolor sit amet consectetur adipisicing elit. Ipsa itaque, eos aliquam, placeat unde numquam velit assumenda consequatur, hic quam debitis voluptatibus suscipit alias tempora voluptatem dolorem iure dolorum voluptates.</p>
+              </div>
+            </div>
+            <div class="w-100 m-4"></div>
+            <div class="mains col-lg-12">
+              <div class="artist-1 first-set m-1" data-aos="zoom-in" data-aos-delay="200">
+                  <img class="img-fluid" src="{% static '/news/2.jpg' %}" alt=""> 
+              </div>
+              <div class="hovering-effect p-0 m-0">
+                <p class="mx-1 p-1"><span class="fs-4">TWO SPICE</span><br> ipsum dolor sit amet consectetur adipisicing elit. Ipsa itaque, eos aliquam, placeat unde numquam velit assumenda consequatur, hic quam debitis voluptatibus suscipit alias tempora voluptatem dolorem iure dolorum voluptates.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6" style="border:1px solid transparent">
+          <div class="row">
+            <div class="mains col-lg-12">
+              <div class="artist-1 first-set m-1" data-aos="zoom-in" data-aos-delay="200">
+                  <img class="img-fluid" src="{% static '/news/3.jpg' %}" alt=""> 
+              </div>
+              <div class="hovering-effect p-0 m-0">
+                <p class="mx-1 p-1"><span class="fs-4">ADANIES</span><br> ipsum dolor sit amet consectetur adipisicing elit. Ipsa itaque, eos aliquam, placeat unde numquam velit assumenda consequatur, hic quam debitis voluptatibus suscipit alias tempora voluptatem dolorem iure dolorum voluptates.</p>
+              </div>
+            </div>
+            <div class="w-100 m-4"></div>
+            <div class="mains col-lg-12">
+              <div class="artist-1 first-set m-1" data-aos="zoom-in" data-aos-delay="200">
+                  <img class="img-fluid" src="{% static '/news/4.jpg' %}" alt=""> 
+              </div>
+              <div class="hovering-effect p-0 m-0">
+                <p class="mx-1 p-1"><span class="fs-4">OCTABIES</span><br> ipsum dolor sit amet consectetur adipisicing elit. Ipsa itaque, eos aliquam, placeat unde numquam velit assumenda consequatur, hic quam debitis voluptatibus suscipit alias tempora voluptatem dolorem iure dolorum voluptates.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer id="footer">
+  <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Massboss</h3>
+            <p>
+              LC/C30 Tsorlor Selina Street <br>
+              Ashaiman, Greater Accra Region<br>
+              Ghana <br><br>
+              <strong>Phone:</strong> +233 550 999 226<br>
+              <strong>Email:</strong> massboyyofficial@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Artists</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Videos</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Music Produciton</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Video Production</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Music Producation</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Studio Recording</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Vartsy Technologies</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Get interactive with Massboss Entertainment on social media</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Massboss</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://vartsytech.com/" style="color: white;">Vartsy Technologies</a>
+      </div>
+    </div>
+  </footer><!--End of footer-->
+
+
+<!--<div class="col-lg-7">
+              <div class="row">
+                  <div class="col-lg-12">
+                      <div class="row">
+                          <div class="col-md-7">
+                              <div class="artist-1 first-set m-1" data-aos="zoom-in" data-aos-delay="200"">
+                                  <img class="img-fluid" src="./{% static '' %}/news/1.jpg" alt="">
+                                  <p class="fs-3 mx-2 my-1">1. TWO SPICE</p>
+                                  <p class="mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis magnam, id repudiandae ex ducimus doloremque deserunt? Deserunt nihil facere dolores alias nobis praesentium ipsa, tempora eligendi, laboriosam reiciendis numquam omnis.</p>
+                              </div>
+                          </div>
+                          <div class="col-md-5">
+                              <div class="artist-1 first-set m-1" data-aos="zoom-in" data-aos-delay="200">
+                                  <img class="img-fluid" src="./{% static '' %}/news/2.jpg" alt="">
+                                  <p class="fs-3 mx-2 my-1">2. CRAYON</p>
+                                  <p class="mx-2">Lorem ipsum dolor, labore voluptate laborum enim dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis magnam, id repudiandae ex ducimus doloremque deserunt? Deserunt nihil facere dolores alias nobis praesentium ipsa, tempora eligendi, laboriosam reiciendis numquam omnis.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="w-100 m-2"></div>
+                  <div class="col-lg-12">
+                      <div class="row">
+                          <div class="col-md-5">
+                              <div class="artist-1 m-1" data-aos="zoom-in" data-aos-delay="200">
+                                  <img class="img-fluid" src="./{% static '' %}/news/4.jpg" alt="">
+                                  <p class="fs-3 mx-2 my-1">3. NILLIES</p>
+                                  <p class="mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis magnam, id repudiandae ex ducimus doloremque deserunt? Deserunt nihil facere dolores alias nobis praesentium ipsa, tempora eligendi, laboriosam reiciendis numquam omnis.</p>
+                              </div>
+                          </div>
+                          <div class="col-md-7">
+                              <div class="artist-1 m-1" data-aos="zoom-in" data-aos-delay="200">
+                                  <img class="img-fluid" src="./{% static '' %}/news/6.jpg" alt="">
+                                  <p class="fs-3 mx-2 my-1">4. ADANIES</p>
+                                  <p class="mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis magnam, id repudiandae ex ducimus doloremque deserunt? Deserunt nihil facere dolores alias nobis praesentium ipsa, tempora eligendi, laboriosam reiciendis numquam omnis.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-5">
+              <div class="artist-1 m-1" data-aos="zoom-in" data-aos-delay="200">
+                  <img class="img-fluid" src="./{% static '' %}/news/7.jpg" alt="">
+                  <p class="fs-3 mx-2 my-1">5. SNARES</p>
+                  <p class="mx-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore eveniet animi commodi accusamus dicta deleniti. Quod fugit itaque harum ea quam libero non officiis commodi eos. Dicta, inventore nihil. Quis?</p>
+              </div>
+          </div>
+      </div>-->
+{% endblock %}
+

@@ -131,11 +131,11 @@ STATIC_ROOT = (BASE_DIR / 'asset')
 STATICFILES_DIRS = [
     BASE_DIR / 'static'
 ]
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
-EMAIL_PORT = 587
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+EMAIL_HOST_USER = '7b95b893dbf319'
+EMAIL_HOST_PASSWORD = '563e8fc89c5a57'
+EMAIL_PORT = '2525'
 EMAIL_USE_TLS = True
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field

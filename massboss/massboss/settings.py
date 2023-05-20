@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'music.apps.MusicConfig',
     'crispy_forms',
+    'crispy_bootstrap4',
 ]
 
 MIDDLEWARE = [
@@ -122,6 +123,9 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 STATIC_URL = 'static/'
 
 
+LOGIN_REDIRECT_URL = 'music-index'
+LOGIN_URL = 'music-login'
+
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = (BASE_DIR / 'media')
@@ -132,11 +136,11 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static'
 ]
 # EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
-EMAIL_HOST_USER = '7b95b893dbf319'
-EMAIL_HOST_PASSWORD = '563e8fc89c5a57'
-EMAIL_PORT = '2525'
-EMAIL_USE_TLS = True
+# EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+# EMAIL_HOST_USER = '7b95b893dbf319'
+# EMAIL_HOST_PASSWORD = '563e8fc89c5a57'
+# EMAIL_PORT = '2525'
+# EMAIL_USE_TLS = True
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 

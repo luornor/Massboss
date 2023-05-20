@@ -6,17 +6,152 @@ color:var(--gold);
 font-weight: 900;
 font-size: 7rem;
 font-family: 'Kufam', sans-serif;
+line-height: 50%;
 }
 .heroTxtContainer{
+    display: flex;
+    align-items: center;
 height:30vh;
-background-image:url(/assets/img/about.jpg);
+background-image: url(../img/about-bg.png);
 background-size: cover;
 background-position: center;
 text-align: center;
 }
+
+/*
+320px — 480px: Mobile devices.
+481px — 768px: iPads, Tablets.
+769px — 1024px: Small screens, laptops.
+1025px — 1200px: Desktops, large screens.
+1201px and more — Extra large screens, TV.*/
+
+  
+  @media (min-width: 1024px) {
+    .abth1{
+        color:var(--gold);
+        font-weight: 900;
+        font-size: 6.5rem;
+        font-family: 'Kufam', sans-serif;
+        line-height: 50%;
+        }
+        .heroTxtContainer{
+        height:30vh;
+        background-image: url(../img/about-bg.png);
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        }
+  }
+  
+  @media (max-width: 820px) {
+    .abth1{
+        color:var(--gold);
+        font-weight: 800;
+        font-size: 4.5rem;
+        font-family: 'Kufam', sans-serif;
+        }
+        .heroTxtContainer{
+        height:25vh;
+        }
+  }
+  
+  @media (max-width: 500px) {
+    .abth1{
+        color:var(--gold);
+        font-weight: 800;
+        font-size: 3rem;
+        line-height: 100%;
+        font-family: 'Kufam', sans-serif;
+        }
+        .heroTxtContainer{
+        height:25vh;
+        }
+  }
+  
+  @media (max-width: 320px) {
+
+    }
+    
+  
+
+
+
+
+
+/*Profile section*/
 .profile{
     background: rgb(235, 233, 233);
+    overflow: hidden;
 }
+.profile img{
+    width:100%;
+}
+.abtSecTitle{
+    font-family: 'kufam', sans-serif;
+    font-weight: 400;
+    font-size: 41px;
+    color: rgb(22, 22, 22);
+}
+#abtReadMore{
+    font-weight: 500;
+    color:var(--gold);
+    cursor: pointer;
+}
+#abtReadMore:hover{
+    color: rgb(14, 15, 15);
+}
+#abtReadMoreContent{
+    display: none;
+}
+
+/*End of Profile Section*/
 .services{
     background:rgb(228, 227, 227) ;
 }
+#abtStaffSec{
+    background: rgb(245, 201, 81);
+}
+.staffDiv img{
+    margin:0 10px 25px;
+}
+.staffImg{
+    width: 30%;
+    height: auto;
+}
+.staffName{
+    font-family: 'Kufam', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+/*
+/////////////Services Styling
+*/
+.serviceItem{
+    color: rgb(255, 255, 255);
+}
+.serviceTitle{
+    color: var(--gold);
+    font-family: 'kugam',sans-serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+.serviceItem img{
+    width:70%;
+    height:auto;
+    position:relative;
+    top:50px;
+}
+.serviceItem i{
+    color: var(--gold);
+  font-size: 28px;
+  transition: ease-in-out 0.3s;
+  z-index: 1000;
+  outline: 1px solid var(--gold);
+  outline-offset: 7px;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+/*//////////////end services styling
+*/

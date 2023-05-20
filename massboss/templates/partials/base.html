@@ -11,6 +11,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <!-- Main CSS File -->
   <link href="{% static '/css/style.css' %}" rel="stylesheet">
+  <link href="{% static '/css/style.css' %}" rel="stylesheet">
+    <link href="{% static '/css/tracks.css' %}" rel="stylesheet">
+    <link href="{% static '/css/newtracks.css' %}" rel="stylesheet">
 
    <!-- Vendor CSS Files -->
    <link href="{% static '/vendor/aos/aos.css' %}" rel="stylesheet">
@@ -21,12 +24,17 @@
    <link href="{% static '/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
 
    <!-- Favicons -->
-  <link href="{% static '/img/favicon.png' %}" rel="icon">
+  <link href="{% static '/img/head.png' %}" rel="icon">
   <link href="{% static '/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
   
    <!-- Google Fonts -->
    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@400;900&display=swap" rel="stylesheet">
   </head>
   <body class="bg-dark">{% include "partials/nav.html" %}
     {% block content %}
@@ -50,5 +58,74 @@
 
   <!-- Template Main JS File -->
   <script src="{% static '/js/main.js' %}"></script>
+  <!-- ======= Footer ======= -->
+<footer id="footer">
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3>Massboss</h3>
+          <p>
+            LC/C30 Tsorlor Selina Street <br>
+            Ashaiman, Greater Accra Region<br>
+            Ghana <br><br>
+            <strong>Phone:</strong> +233 550 999 226<br>
+            <strong>Email:</strong> massboyyofficial@gmail.com<br>
+          </p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Artists</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Videos</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a class="btn btn-sm btn-warning" href="{% url 'music-login' %}">Login</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Music Produciton</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Video Production</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Music Producation</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Studio Recording</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Vartsy Technologies</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Social Networks</h4>
+          <p>Get interactive with Massboss Entertainment on social media</p>
+          <div class="social-links mt-3">
+            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-4">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Massboss</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bizland-bootstrap-business-template/ -->
+      Designed by <a href="https://vartsytech.com/" style="color: white;">Vartsy Technologies</a>
+    </div>
+  </div>
+</footer><!-- End Footer -->
   </body>
 </html>

@@ -26,16 +26,9 @@
     font-weight: 900;
     font-size:5rem;
     font-family: 'Kufam', sans-serif;
-}/*
-.heroTxtContainer{
-    height:30vh;
-    background-image:url(/assets/img/about.jpg);
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-} */
+}
 .overup{
-    background : url(/img/mic.jpg);
+    background : url(../img/mic.jpg);
     background-size: cover;
     background-position:center;
     background-attachment: fixed; 
@@ -208,20 +201,6 @@
     animation-delay: 1s;
     transition: all .3s ease; 
 }
-/* .tr-7:after{
-    content:" silas";
-    position:absolute;
-    width:100%;
-    height:260px;
-    background-color: rgba(30, 29, 29, 0.26);
-    transform-origin: bottom left;
-    transform: translateY(200px);
-    bottom:0%;
-    transition: all .3s ease;
-}
-.tr-7:hover:after{
-    transform: translateY(0px);
-} */
 .tr-8:before{
     content:" \00a0 Song Title : Don't Rush It \A  \00a0 Artiste : Snares";
     white-space: pre;;
@@ -355,12 +334,6 @@
 
 
 
-
-
-
-
-
-
 .artist-1:hover p{
     color:var(--gold)
 }
@@ -373,4 +346,3 @@
     font-family: 'Kufam', sans-serif;
     margin-top:20px;
 }
-

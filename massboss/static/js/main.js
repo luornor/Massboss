@@ -4,6 +4,12 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+/**
+ *  Scroll to the top on reload / refresh
+ *  */
+window.addEventListener("load", () => {
+  window.scrollTo(0, 0);
+});
 (function() {
   "use strict";
 
@@ -302,8 +308,19 @@
   new PureCounter();
 
 })()
-const sub = document.querySelector('.tr-1') ;
-sub.addEventListener('moveout',()=>{
-  console.log('red');
-  sub.classList.add('.inactive')
-})
+
+// const sub = document.querySelector('.tr-1') ;
+// sub.addEventListener('moveout',()=>{
+//   console.log('red');
+//   sub.classList.add('.inactive')
+// })
+
+const scroll = document.querySelector('.scroll')
+  window.onscroll = () => {
+      if (window.scrollY > 100) {
+          scroll.style.backgroundColor = 'rgb(255, 194, 26)'
+          
+      } else {
+         scroll.style.background = 'transparent'
+      }
+};     

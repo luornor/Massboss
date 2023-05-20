@@ -1,34 +1,22 @@
 from django.shortcuts import render,redirect
+from .models import *
 from .forms import *
-from django.core.mail import send_mail
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import User
 
-  
 
 # Create your views here.
 
 def index(request):
-    if request.method == 'POST':
-        form = ContactForm(request.POST)
-        
-        if form.is_valid():
-            submitted = False
-            subject = "Website Inquiry" 
-            body = {
-            'name': form.cleaned_data['name'], 
-            'email': form.cleaned_data['email'], 
-            'message':form.cleaned_data['message'], 
-            }
-            
-            message = f"\n Name: {body['name']} \n E-mail: {body['email']} \n Message: {body['message']} "
-            send_mail(subject, message,from_email=body['email'],recipient_list=['jamesmacgyver442@gmail.com'])
-            return redirect('music-index')
-    else:
-        form = ContactForm()
-    context = {
-        'form': form,
-    }
+    return render(request,'music/index.html')
 
-    return render(request,'music/index.html', context)
+def tracks(request):
+    items = Song.objects.all()
+
+    context = {
+        'items':items,
+    }
+    return render(request,'music/tracks.html',context)
     
 def about(request):
     return render(request,'music/aboutus.html')
@@ -38,13 +26,30 @@ def artist(request):
     return render(request,'music/artist.html')
 
 
-def inner(request):
-    return render(request,'music/inner-page.html')
+def videos(request):
+    return render(request,'music/videos.html')
 
+def gallery(request):
+    items = Song.objects.all()
 
-def portfolio(request):
-    return render(request,'music/portfolio-details.html')
+    context = {
+        'items':items,
+    }
+    return render(request,'music/gallery.html',context)
+    
 
-def track(request):
-    return render(request,'music/track.html')
+@login_required
+def upload(request):
+    if request.method == 'POST':
+        form = MusicUploadForm(request.POST,request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('music-tracks')
+    else:
+        form = MusicUploadForm()
+
+    context = {
+        'form':form,
+    }
+    return render(request,'music/upload.html',context)
     

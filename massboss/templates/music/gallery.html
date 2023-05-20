@@ -1,0 +1,50 @@
+{% extends "partials/base.html" %}
+{% block title %}Massboss Entertainment- Gallery{% endblock title %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block content %}
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+      .container-fluid,.container,.firstrow{
+        border:1px solid transparent;
+      }
+      .the-i{
+        border-radius: 4px;
+        backdrop-filter:blur(50%);
+        /* filter: grayscale(0.3) brightness(0.9); */
+        cursor: pointer;
+        transition: 0.3s linear;
+        z-index:1;
+      }  
+      .row .the-i:hover {
+        filter: grayscale(0);
+      }
+      .for-img{
+        border-radius: 4px;
+        background-image:url(assets/img/about-bg.png);
+        outline: none;
+        border:none;
+      } 
+    </style>
+            <div class="container">
+              <h1 class="text-center display-1 trackh"> GALLERY </h1>
+                <div class="row" >
+                  {% for item in items  %}
+                  <div class="firstrow col-md-4 p-2">
+                    <div class="for-img mb-4">
+                      <img class="the-i img-fluid" src="{{item.image.url}}" alt="1">
+                    </div>
+                  </div>                
+                </div>
+                {% endfor %}
+            </div>
+            
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      title="Back To Top"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a><!--Back to top button-->
+{%endblock%}

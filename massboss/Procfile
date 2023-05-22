@@ -1,1 +1,1 @@
-web:  wsgi.py --log-file
+web: gunicorn massboss.wsgi --log-file -

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Chivo+Mono:wght@200&family=Comfortaa:wght@300&family=IBM+Plex+Mono:wght@200&family=Lora&family=Open+Sans&family=Roboto:wght@300&family=Share+Tech+Mono&family=Source+Code+Pro&display=swap');
+:root{
+    --gold :  rgb(255, 194, 26);
+}
+.btn-outline-warning{
+    --bs-btn-color:#000;
+    --bs-btn-border-color:var(--gold);
+    --bs-btn-hover-color:var(--gold);
+    --bs-btn-bg:var(--gold);
+    --bs-btn-hover-border-color:var(--gold);
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-active-bg:var(--gold);
+    --bs-btn-active-border-color:var(--gold);
+}
+.the-tracks::-webkit-scrollbar{
+    width:5px;
+    margin-top:5px;
+    background-color:rgba(95, 87, 87, 0.507);
+    border-radius:0 0 5px 5px;
+ }
+ .the-tracks::-webkit-scrollbar-thumb{
+    background-color:var(--gold);
+    border-radius:0 0 5px 5px;
+ }
+ audio::-webkit-media-controls-play-button,
+ audio::-webkit-media-controls-panel {
+     background-color: var(--gold);
+     color: var(--gold)
+ }
+ .cover-up:not(:last-child){
+     margin:3px 3px;
+     border:none;
+     border-bottom:2px solid rgb(158, 154, 154);
+ }
+ .trackh{
+    color:var(--gold);
+    font-weight: 900;
+    font-family: 'Kufam', sans-serif;
+    background-color: transparent;
+    border:none;
+}
+.the-tracks{
+    border:none;
+    border-top:2px solid var(--gold)
+}
+.our-track{
+    border:1px solid transparent;
+}
+.the-tracks{
+    height:550px;
+    width:90%;
+    overflow-x: hidden;
+}
+.lils{
+    border-radius:3px;
+}
+p{
+  text-align: justify;
+}
+.names{
+    border:none;
+    border-bottom:1px solid rgb(130, 128, 125);
+}
+.for-audio,.second{
+    border:1px solid transparent
+}
+.text{
+    color:linen;
+}
+.main-audio{
+    width:100%;
+    background-color:transparent;
+}
+audio{
+    width:300px;
+}
+.cover-up{
+    width:80%;
+}
+h2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    font-weight:700;
+    color:white;
+}
+@media(max-width:578px){
+    audio{
+        width:100%;
+    }
+    .cover-up{
+        width:100%;
+    }
+}

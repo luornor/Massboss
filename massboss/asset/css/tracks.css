@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Chivo+Mono:wght@200&family=Comfortaa:wght@300&family=IBM+Plex+Mono:wght@200&family=Lora&family=Open+Sans&family=Roboto:wght@300&family=Share+Tech+Mono&family=Source+Code+Pro&display=swap');
+:root{
+    --gold :  rgb(255, 194, 26);
+}
+.btn-outline-warning{
+    --bs-btn-color:#000;
+    --bs-btn-border-color:var(--gold);
+    --bs-btn-hover-color:var(--gold);
+    --bs-btn-bg:var(--gold);
+    --bs-btn-hover-border-color:var(--gold);
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-active-bg:var(--gold);
+    --bs-btn-active-border-color:var(--gold);
+}
+.lil-intro{
+    border:none;
+    border-bottom:1px solid rgba(63, 61, 61, 0.244);
+    background-color:black;
+    height:30vh;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.abth2{
+    color:var(--gold);
+    font-weight: 900;
+    font-size:5rem;
+    font-family: 'Kufam', sans-serif;
+}
+.overup{
+    background : url(../img/mic.jpg);
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+}
+.first-1 {
+    font-family: 'Kufam', sans-serif;
+    padding-top:30px;
+}
+.second-2{
+    color:var(--gold);
+    font-family: 'Kufam', sans-serif;
+    position:relative;
+}
+.second-2:before{
+    content:"";
+    position:absolute;
+    width:130px;
+    height:3px;
+    border-radius:5px;
+    transform-origin: bottom left;
+    bottom:0%;
+    background-color:var(--gold);
+    transition: all .3s ease;
+}
+@media(max-width:768px){
+    .second-2:before{
+        width:90px;
+    }
+}
+@media(max-width:440px){
+    .second-2:before{
+        width:130px;
+    }
+}
+.create{
+    border:1px solid var(--gold);
+    margin:10px 10px;
+    height:317px;
+    position:relative;
+}
+.tr-1,.tr-2,.tr-3,.tr-4,
+.tr-5,.tr-6,.tr-7,.tr-8,
+.tr-9{
+    overflow: hidden;
+}
+.tr-1:before{
+    content:" \00a0 Song Title : Don't Rush It \A  \00a0 Artiste : Snares";
+    white-space: pre;
+    position:absolute;
+    width:100%;
+    height:50px;
+    transform-origin: top left;
+    transform: translateY(-60px);
+    top:0%;
+    background-color:var(--gold);
+    transition: all .3s ease;
+}
+/* .tr-1.inactive{
+    animation:remove 2s linear;
+    transition: all .3s ease;
+}
+@keyframes remove{
+    0%,100%{transform: translateY(-50px);}
+} */
+.tr-1:hover:before{
+    animation:hover 3s linear;
+    animation-delay: 1s;
+    transition: all .3s ease;  
+}
+.tr-2:before{
+    content:" \00a0 Song Title : Don't Rush It \A  \00a0 Artiste : Snares";
+    white-space: pre;
+    position:absolute;
+    width:100%;
+    height:50px;
+    transform-origin: top left;
+    transform: translateY(-60px);
+    top:0%;
+    background-color:var(--gold);
+    transition: all .3s ease;
+}
+.tr-2:hover:before{
+    animation:hover 3s linear;
+    animation-delay: 1s;
+    transition: all .3s ease; 
+}
+.tr-3:before{
+    content:" \00a0 Song Title : Don't Rush It \A  \00a0 Artiste : Snares";
+    white-space: pre;
+    position:absolute;
+    width:100%;
+    height:50px;
+    transform-origin: top left;
+    transform: translateY(-60px);
+    top:0%;
+    background-color:var(--gold);
+    transition: all .3s ease;
+}
+.tr-3:hover:before{
+    animation:hover 3s linear;
+    animation-delay: 1s;
+    transition: all .3s ease; 
+}
+.tr-4:before{
+    content:" \00a0 Song Title : Don't Rush It \A  \00a0 Artiste : Snares";
+    white-space: pre;
+    position:absolute;
+    width:100%;
+    height:50px;
+    transform-origin: top left;
+    transform: translateY(-60px);
+    top:0%;
+    background-color:var(--gold);
+    transition: all .3s ease;
+}
+.tr-4:hover:before{
+    animation:hover 3s linear;
+    animation-delay: 1s;
+    transition: all .3s ease; 
+}
+.tr-5:before{
+    content:" \00a0 Song Title : Don't Rush It \A  \00a0 Artiste : Snares";
+    white-space: pre;
+    position:absolute;
+    width:100%;
+    height:50px;
+    transform-origin: top left;
+    transform: translateY(-60px);
+    top:0%;
+    background-color:var(--gold);
+    transition: all .3s ease;
+}
+.tr-5:hover:before{
+    animation:hover 3s linear;
+    animation-delay: 1s;
+    transition: all .3s ease; 
+}
+.tr-6:before{
+    content:" \00a0 Song Title : Don't Rush It \A  \00a0 Artiste : Snares";
+    white-space: pre;
+    position:absolute;
+    width:100%;
+    height:50px;
+    transform-origin: top left;
+    transform: translateY(-60px);
+    top:0%;
+    background-color:var(--gold);
+    transition: all .3s ease;
+}
+.tr-6:hover:before{
+    animation:hover 3s linear;
+    animation-delay: 1s;
+    transition: all .3s ease; 
+}
+.tr-7:before{
+    content:" \00a0 Song Title : Don't Rush It \A  \00a0 Artiste : Snares";
+    white-space: pre;
+    position:absolute;
+    width:100%;
+    height:50px;
+    transform-origin: top left;
+    transform: translateY(-60px);
+    top:0%;
+    background-color:var(--gold);
+    transition: all .3s ease;
+}
+.tr-7:hover:before{
+    animation:hover 3s linear;
+    animation-delay: 1s;
+    transition: all .3s ease; 
+}
+.tr-8:before{
+    content:" \00a0 Song Title : Don't Rush It \A  \00a0 Artiste : Snares";
+    white-space: pre;;
+    position:absolute;
+    width:100%;
+    height:50px;
+    transform-origin: top left;
+    transform: translateY(-60px);
+    top:0%;
+    background-color:var(--gold);
+    transition: all .3s ease;
+}
+.tr-8:hover:before{
+    animation:hover 3s linear;
+    animation-delay: 1s;
+    transition: all .3s ease; 
+}
+.tr-9:before{
+    content:" \00a0 Song Title : Don't Rush It \A  \00a0 Artiste : Snares";
+    white-space: pre;
+    position:absolute;
+    width:100%;
+    height:50px;
+    transform-origin: top left;
+    transform: translateY(-60px);
+    top:0%;
+    background-color:var(--gold);
+    transition: all .3s ease;
+}
+.tr-9:hover:before{
+    animation:hover 4s linear;
+    animation-delay: 1s;
+    transition: all .3s ease; 
+}
+@keyframes hover{
+    0%{transform: translateY(-60px);
+    }
+    20%,40%,60%,80%{transform: translateY(0px);
+    }
+    100%{transform: translateY(-60px);
+    }
+}
+.create,.link-vid{
+    width:100%;
+    transition:all .7s ease;
+}
+.create{
+    border-radius:10px;
+}
+.create:hover{
+    border:1px solid transparent;
+}
+/* ARTISTES' PAGE*/
+.mains{
+    width:94%;
+    border-bottom:10px;
+    overflow:hidden;
+    height:530px;
+    transition: all .3s ease;
+}
+.mains p span{
+    -webkit-text-stroke:1px  var(--gold);
+    letter-spacing: .5px;
+    color:transparent;
+}
+.mains:hover{
+    transform: scale(1.05);
+    color:var(--gold)
+}
+.mains img{
+    height:518px;
+    border-radius:10px;
+    object-fit: cover;
+}
+.mains:hover .hovering-effect{
+    height:200px;
+    transform:translate(0px,-190px);
+}
+.mains:hover .artist-1{
+    border:1px solid var(--gold)
+}
+.artist-1{
+    height:520px;
+    border-radius:10px;
+    transition: all .3s ease;
+}
+.hovering-effect{
+    background-color: rgba(32, 31, 31, 0.545);
+    border-radius:10px;
+    height:20px;
+    backdrop-filter:blur(10px);
+    transition:all .3s ease;
+}
+.hovering-effect p{
+    color:var(--gold)
+}
+
+@media(max-width:900px){
+    .mains:hover .hovering-effect{
+        height:240px;
+        transform:translate(0px,-230px);
+    }  
+}
+@media(max-width:768px){ 
+    .mains:hover .hovering-effect p{
+        font-size:0.9rem;
+    }  
+}
+@media(max-width:540px){
+    .mains:hover .hovering-effect{
+        height:200px;
+        transform:translate(0px,-190px);
+    } 
+}
+.footer-top{
+    margin-top:90px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.artist-1:hover p{
+    color:var(--gold)
+}
+.artist-1:hover{
+    color:var(--gold);
+    border:1px solid var(--gold)
+}
+.heading{
+    color:var(--gold);
+    font-family: 'Kufam', sans-serif;
+    margin-top:20px;
+}
